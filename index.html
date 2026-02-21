@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=no">
+        <title>hEdit</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header id="head">
+            <h1 id="head_title">hEdit</h1>
+            <div id="head_menu">
+                <div id="head_menu_file">
+                    <label id="head_menu_file_label"><span class="alt">F</span>ile</label>
+                    <ul id="head_menu_file_items">
+                        <li id="head_menu_file_items_new">
+                            <div id="head_menu_file_items_new_content"><span class="alt">N</span>ew</div>
+                            <div id="head_menu_file_items_new_key"><span class="ctrl">Ctrl</span>+N</div>
+                        </li>
+                        <li id="head_menu_file_items_open">
+                            <div id="head_menu_file_items_open_content"><span class="alt">O</span>pen</div>
+                            <div id="head_menu_file_items_open_key"><span class="ctrl">Ctrl</span>+O</div>
+                        </li>
+                        <li id="head_menu_file_items_save">
+                            <div id="head_menu_file_items_save_content"><span class="alt">S</span>ave</div>
+                            <div id="head_menu_file_items_save_key"><span class="ctrl">Ctrl</span>+S</div>
+                        </li>
+                        <li id="head_menu_file_items_saveAs">
+                            <div id="head_menu_file_items_saveAs_content">Save <span class="alt">A</span>s</div>
+                            <div id="head_menu_file_items_new_key"><span class="ctrl">Ctrl</span>+<span class="shift">Shift</span>+S</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="head_menu_edit">
+                    <label id="head_menu_edit_label"><span class="alt">E</span>dit</label>
+                    <ul id="head_menu_edit_items">
+                        <li id="head_menu_edit_items_undo">
+                            <div id="head_menu_edit_items_undo_content"><span class="alt">U</span>ndo</div>
+                            <div id="head_menu_edit_items_undo_key"><span class="ctrl">Ctrl</span>+Z</div>
+                        </li>
+                        <li id="head_menu_edit_items_redo">
+                            <div id="head_menu_edit_items_redo_content">Re<span class="alt">d</span>o</div>
+                            <div id="head_menu_edit_items_redo_key"><span class="ctrl">Ctrl</span>+Y</div>
+                        </li>
+                        <li id="head_menu_edit_items_cut">
+                            <div id="head_menu_edit_items_cut_content">Cu<span class="alt">t</span></div>
+                            <div id="head_menu_edit_items_cut_key"><span class="ctrl">Ctrl</span>+X</div>
+                        </li>
+                        <li id="head_menu_edit_items_copy">
+                            <div id="head_menu_edit_items_copy_content"><span class="alt">C</span>opy</div>
+                            <div id="head_menu_edit_items_copy_key"><span class="ctrl">Ctrl</span>+C</div>
+                        </li>
+                        <li id="head_menu_edit_items_paste">
+                            <div id="head_menu_edit_items_paste_content"><span class="alt">P</span>aste</div>
+                            <div id="head_menu_edit_items_paste_key"><span class="ctrl">Ctrl</span>+V</div>
+                        </li>
+                        <li id="head_menu_edit_items_find">
+                            <div id="head_menu_edit_items_find_content"><span class="alt">F</span>ind</div>
+                            <div id="head_menu_edit_items_find_key"><span class="ctrl">Ctrl</span>+F</div>
+                        </li>
+                        <li id="head_menu_edit_items_replace">
+                            <div id="head_menu_edit_items_replace_content"><span class="alt">R</span>eplace</div>
+                            <div id="head_menu_edit_items_replace_key"><span class="ctrl">Ctrl</span>+H</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="head_settings">Settings</button>
+        </header>
+        <textarea id="editor"></textarea>
+        
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>
