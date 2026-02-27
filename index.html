@@ -6,6 +6,8 @@
     <title>hEdit</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
 </head>
 <body>
     <header id="head">
@@ -70,7 +72,9 @@
         </div>
         <button id="head_settings">Settings</button>
     </header>
-    <textarea id="editor"></textarea>
+    <div id="editorContainer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>

@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const fileDropdown = document.getElementById('head_menu_dropdowns_file');
     const editDropdown = document.getElementById('head_menu_dropdowns_edit');
     const settingsButton = document.getElementById('head_settings');
+    const editorContainer = document.getElementById('editorContainer');
+    
+    const editor = CodeMirror(editorContainer, {
+        lineNumbers: true,
+        theme: 'dracula',
+        styleActiveLine: true,
+        lineWrapping: true,
+        indentUnit: 4,
+        tabSize: 4,
+        indentWithTabs: true,
+        autofocus: true,
+        value: ''
+    });
     
     let activeMenu = null;
     
@@ -106,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (activeMenu) {
             openMenu(activeMenu);
         }
+        editor.refresh();
     });
     
     document.addEventListener('keydown', function(e) {
@@ -115,4 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     positionDropdowns();
+    
+    setTimeout(() => {
+        editor.refresh();
+    }, 100);
 });

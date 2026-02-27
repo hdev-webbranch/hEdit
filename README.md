@@ -16,4 +16,4 @@ hEdit fully adopts pure front-end technology, using pure HTML, CSS and JavaScrip
 
 ## Third-party Libraries
 
-hEdit does not use any third-party libraries for the time being. If it is used in the future, it will be added here.
+- [CodeMirror](https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js)
